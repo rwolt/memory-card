@@ -1,3 +1,4 @@
+import cardback from './card-back.png';
 import babyluigi from './babyluigi.png';
 import babymario from './babymario.png';
 import bowser from './bowser.png';
@@ -28,6 +29,7 @@ import wario from './wario.png';
 import yoshi from './yoshi.png';
 
 export {
+    cardback,
     babyluigi,
     babymario,
     bowser,

@@ -1,16 +1,51 @@
-.card {
+/* .card {
     flex-basis: 16%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid black;
     background: lightgreen;
+} */
+
+.flip-card {
+    background-color: transparent;
+    height: 360px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    /* perspective: 1000px; */
 }
 
-.card-image {
-    height: 300px;
+.flip-card img {
+    width: 300px;
 }
 
-.card-name {
-    font-size: 20px;
+.flip {
+    transition: transform 0.5s;
+    transform: rotateY(180deg);
+}
+
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* transition: transform 0.5s; */
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* .flip-card-front {
+    transform: rotateY(180deg);
+} */
+
+.flip-card-back {
+    transform: rotateY(180deg);
 }
