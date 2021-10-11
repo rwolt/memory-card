@@ -35,12 +35,40 @@ function App() {
     {id: uniqid(), name: 'Yoshi', image: 'yoshi.png', selected: false}
   ]);
 
+  const [score, setScore] = useState(0);
+  const [best, setBest] = useState(0);
+
+  const handleClick = (e) => {
+    const {id} = e.currentTarget;
+    const clicked = characters.filter(character => character.id === id);
+    if(clicked[0].selected === false) {
+      setCharacters(characters.map(character => {
+        return(
+          character.id === id ? {...character, selected: true} : {...character}
+        )
+      }))
+      setScore(score + 1);
+    } else {
+      if(score > best) {
+        setBest(score);
+      }
+      setScore(0);
+      setCharacters(characters.map(character => {
+        return(
+          {...character, selected: false}
+        )}));
+  }
+}
+
+
   return (
     <div className="App">
-      <p className="score">Score: </p>
-      <p className="high-score">Best: </p>
-      <Grid characters={characters} />
+      <p className="score">Score: {score} </p>
+      <p className="high-score">Best: {best}  </p>
+      <Grid characters={characters} handleClick={handleClick} />
     </div>
   );
 }
+
+
 export default App;
