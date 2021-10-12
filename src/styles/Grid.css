@@ -1,5 +1,6 @@
 .grid {
-    width: 80%;
+    width: 70vw;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
