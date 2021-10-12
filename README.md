@@ -7,5 +7,5 @@ A memory card game built with ReactJS.
 * Using useState() and useEffect() with functional components.
 * Using the spread operator, ternary operator, and array methods to return new state objects.
 * Importing assets using ES6 modules.
-* Practice using CSS transition and transform.
+* Practice using CSS transition and transform.  
 [Live Preview](https://github.com/rwolt/memory-card)
