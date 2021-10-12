@@ -10,14 +10,16 @@
 .flip-card {
     background-color: transparent;
     height: 360px;
-    width: 300px;
+    width: 16%;
     border: none;
-    border-radius: 15px;
     /* perspective: 1000px; */
+    margin: 2px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .flip-card img {
-    width: 300px;
+    width: 100%;
 }
 
 .flip {
@@ -42,10 +44,16 @@
     backface-visibility: hidden;
 }
 
-/* .flip-card-front {
-    transform: rotateY(180deg);
-} */
+
+.flip-card-front img {
+    border-radius: 20px;
+}
+
 
 .flip-card-back {
     transform: rotateY(180deg);
+    background-color:  rgb(156, 222, 248);
+    border: 5px solid rgb(130, 126, 79);
+    border-radius: 20px;
+    border-collapse: separate;
 }

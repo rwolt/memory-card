@@ -1,7 +1,13 @@
 .grid {
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    opacity: 1.0;
+    padding: 30px;
+    background-color: rgb(216, 210, 40);
+    border-radius: 20px;
 }
+

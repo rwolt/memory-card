@@ -26,13 +26,13 @@ function Grid(props) {
     const [currentCharacters, setCurrentCharacters] = useState(generateRandomCharacters());
 
     return(
-        <div className="grid">
-            {currentCharacters.map(character => {
-                return(
-                    <Card key={character.id} id={character.id} name={character.name} image={character.image} handleClick={props.handleClick} />
-                )
-            })}
-        </div>
+            <div className="grid">
+                {currentCharacters.map(character => {
+                    return(
+                        <Card key={character.id} id={character.id} name={character.name} image={character.image} handleClick={props.handleClick} />
+                    )
+                })}
+            </div>
     )
 }
 

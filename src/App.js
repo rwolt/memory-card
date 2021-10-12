@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import uniqid from 'uniqid';
 import './App.css';
+import Header from './components/Header.js';
 import Grid from './components/Grid.js'
 import {babyluigi,
         babymario,
@@ -92,8 +93,7 @@ function App() {
 
   return (
     <div className="App">
-      <p className="score">Score: {score} </p>
-      <p className="high-score">Best: {best}  </p>
+      <Header score={score} best={best} />
       <Grid characters={characters} handleClick={handleClick} />
     </div>
   );

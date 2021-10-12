@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
+
+.header {
+    width: 100vw;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    display: flex;
+    color: white;
+    font-size: 32px;
+    font-family: 'Chivo', sans-serif;
+}
+
+.directions {
+    background: rgba(243, 29, 29, 0.926);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.high-scores {
+    font-size: 40px;
+    background: rgb(243, 29, 29);
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
